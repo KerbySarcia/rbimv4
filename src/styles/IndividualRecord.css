@@ -277,4 +277,8 @@
   .IndividualRecord__row > * {
     width: 100%;
   }
+  .IndividualRecord__row {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -4,6 +4,7 @@ import "./styles/App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import IndividualRecords from "./pages/IndividualRecords";
+import Questions from "./pages/Questions";
 import HouseholdRecord from "./pages/HouseholdRecord";
 import Reports from "./pages/Reports";
 import SharedLayout from "./pages/SharedLayout";
@@ -19,6 +20,7 @@ const App = () => {
               path="individual-records"
               element={<IndividualRecords />}
             ></Route>
+            <Route path="individual-records/questions" element={<Questions />} />
             <Route path="household-record" element={<HouseholdRecord />} />
             <Route path="reports" element={<Reports />} />
           </Route>

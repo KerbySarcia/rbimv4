@@ -52,10 +52,7 @@ const IndividualRecordLinks = () => {
               <FileDownloadOutlinedIcon />
               <span className="IndividualLinks__link-text">Image Upload</span>
             </button>
-            <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-              {/* TODO: add an input to get photos. */}
-              Modal
-            </Modal>
+            <Modal open={isOpen} onClose={() => setIsOpen(false)} />
           </div>
         </div>
       </section>
