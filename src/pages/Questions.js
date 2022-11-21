@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/IndividualRecord.css"
 import IndividualRecordLinks from "../components/IndividualRecordLinks"
+import Modal from '../components/Modal'
 
 const IndividualRecordsQuestions = () => {
  
@@ -260,6 +261,9 @@ const IndividualRecordsQuestions = () => {
                   </div>
                 </div>
               </section>
+              <Modal>
+                <h1 className="modal__upload__label">Hello World!</h1>
+              </Modal>
             </form>
           </div>
         </div>
