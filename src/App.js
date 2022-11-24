@@ -24,7 +24,6 @@ const App = () => {
             <Route path="household-record" element={<HouseholdRecord />} />
             <Route path="reports" element={<Reports />} />
           </Route>
-
           <Route path="login" element={<Login />} />
         </Routes>
       </BrowserRouter>
