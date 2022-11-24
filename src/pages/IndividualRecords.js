@@ -21,8 +21,8 @@ const IndividualRecord = () => {
 
   return (
     <div className="IndividualRecord">
+      <IndividualRecordLinks />
       <div className="full__width IndividualRecord__column">
-        <IndividualRecordLinks />
         <div className="IndividualRecord__Form__Container">
           <form action="" method="POST">
             <section className="IndividualRecord__sections IndividualRecord__row IndividualRecord__reverse-text">

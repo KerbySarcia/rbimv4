@@ -8,6 +8,7 @@ import Questions from "./pages/Questions";
 import HouseholdRecord from "./pages/HouseholdRecord";
 import Reports from "./pages/Reports";
 import SharedLayout from "./pages/SharedLayout";
+import HouseholdRecordQuestions from "./pages/HouseholdRecordQuestions";
 
 const App = () => {
   return (
@@ -20,8 +21,15 @@ const App = () => {
               path="individual-records"
               element={<IndividualRecords />}
             ></Route>
-            <Route path="individual-records/questions" element={<Questions />} />
+            <Route
+              path="individual-records/questions"
+              element={<Questions />}
+            />
             <Route path="household-record" element={<HouseholdRecord />} />
+            <Route
+              path="household-record/questions"
+              element={<HouseholdRecordQuestions />}
+            />
             <Route path="reports" element={<Reports />} />
           </Route>
           <Route path="login" element={<Login />} />
