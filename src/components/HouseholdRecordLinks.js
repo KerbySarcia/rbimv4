@@ -1,21 +1,18 @@
-import React, { useState } from "react";
-import Modal from "./Modal";
 import { NavLink } from "react-router-dom";
 import "../styles/IndividualRecordLinks.css";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
-const IndividualRecordLinks = ({title}) => {
+import Groups2OutlinedIcon from "@mui/icons-material/Groups2Outlined";
+
+const HouseholdRecordLinks = () => {
   // Modal Functions
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <section>
         <div className="IndividualLinks__box IndividualLinks__row">
           <div className="IndividualLinks__Title">
-            <h1>{title}</h1>
+            <h1>Household Records</h1>
           </div>
           <div className="IndividualLinks__row">
             <NavLink
@@ -26,7 +23,7 @@ const IndividualRecordLinks = ({title}) => {
               }}
               className="IndividualLinks__link IndividualLinks__btn"
               end
-              to="/individual-records"
+              to="/household-record"
             >
               <AccountCircleOutlinedIcon />
               <span className="IndividualLinks__link-text">
@@ -40,19 +37,13 @@ const IndividualRecordLinks = ({title}) => {
                   : {};
               }}
               className="IndividualLinks__link IndividualLinks__btn"
-              to="/individual-records/questions"
+              to="/household-record/questions"
             >
-              <HelpOutlineOutlinedIcon />
-              <span className="IndividualLinks__link-text">Questions</span>
+              <Groups2OutlinedIcon />
+              <span className="IndividualLinks__link-text">
+                Household Records
+              </span>
             </NavLink>
-            <button
-              onClick={() => setIsOpen(true)}
-              className="IndividualLinks__link IndividualLinks__btn"
-            >
-              <FileDownloadOutlinedIcon />
-              <span className="IndividualLinks__link-text">Image Upload</span>
-            </button>
-            <Modal open={isOpen} onClose={() => setIsOpen(false)} />
           </div>
         </div>
       </section>
@@ -60,4 +51,4 @@ const IndividualRecordLinks = ({title}) => {
   );
 };
 
-export default IndividualRecordLinks;
+export default HouseholdRecordLinks;
