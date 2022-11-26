@@ -6,7 +6,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
-const IndividualRecordLinks = () => {
+const IndividualRecordLinks = ({title}) => {
   // Modal Functions
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +15,7 @@ const IndividualRecordLinks = () => {
       <section>
         <div className="IndividualLinks__box IndividualLinks__row">
           <div className="IndividualLinks__Title">
-            <h1>Individual Records</h1>
+            <h1>{title}</h1>
           </div>
           <div className="IndividualLinks__row">
             <NavLink
