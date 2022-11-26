@@ -1432,6 +1432,7 @@ const IndividualRecordsQuestions = () => {
                           onChangeQuestions({
                             name: e.target.name,
                             value: e.target.value,
+                            
                           })
                         )
                       }
