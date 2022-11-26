@@ -1426,16 +1426,6 @@ const IndividualRecordsQuestions = () => {
                       name="q58Municipality"
                       type="text"
                       placeholder=""
-                      value={questions.q58Municipality}
-                      onChange={(e) =>
-                        dispatch(
-                          onChangeQuestions({
-                            name: e.target.name,
-                            value: e.target.value,
-                            
-                          })
-                        )
-                      }
                     />
                   </div>
                   <div className="IndividualRecord__row">
