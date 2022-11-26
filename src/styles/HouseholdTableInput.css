@@ -1,0 +1,22 @@
+.HouseholdTableInput {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  background-color: aquamarine;
+  width: 50vw;
+}
+
+.HouseholdTableInput__Box {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: inherit;
+}
+
+.HouseholdTableInput__btn {
+  margin-inline: auto;
+  padding: 0.2rem 2rem;
+  border: none;
+  color: #425f57;
+}
